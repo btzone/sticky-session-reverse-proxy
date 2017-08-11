@@ -1,6 +1,11 @@
-# Sticky session
+# Sticky session reverse proxy
 
-A simple performant way to use [socket.io][0] with a [cluster][1].
+A simple performant way to use [socket.io][0] with a [cluster][1] behind nginx.
+
+## NOTE
+This is a public repo and it is a clone of the sticky-session module. This also utilizes
+a commit based on this pull request https://github.com/indutny/sticky-session/pull/45 however,
+it has been modified to support exponential x-forwarded-for ip addresses and only returns the first in the list.
 
 ## Installation
 
