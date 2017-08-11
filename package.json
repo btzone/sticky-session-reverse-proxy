@@ -1,24 +1,44 @@
 {
-  "name": "sticky-session",
-  "description": "Sticky session balancer based on a `cluster` module",
-  "version": "1.1.3",
+  "name": "socketio-sticky-session",
+  "description": "Sticky session balancer with layer 4 capabilities, based on a `cluster` module",
+  "version": "0.4.2",
   "author": "Fedor Indutny <fedor.indutny@gmail.com>",
   "main": "./lib/sticky-session",
-  "dependencies": {
-    "debug": "^2.2.0",
-    "ip": "^1.0.0"
-  },
+  "dependencies": {},
   "engines": {
-    "node": ">= 0.12.0"
+    "node": ">= 0.6.0"
   },
   "devDependencies": {
-    "jscs": "^2.1.1",
-    "jshint": "^2.8.0"
+    "longjohn": "^0.2.11",
+    "socket.io": "^1.4.3",
+    "socket.io-client": "^1.4.3"
   },
-  "license": "MIT",
+  "optionalDependencies": {},
+  "directories": {
+    "example": "example"
+  },
   "scripts": {
-    "lint": "jscs lib/*.js lib/**/*.js && jshint lib/*.js lib/**/*.js",
-    "test": "npm run lint && (echo test/*-test.js | xargs node)"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "optionalDependencies": {}
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wzrdtales/socket-io-sticky-session.git"
+  },
+  "keywords": [
+    "socket",
+    "socketio",
+    "socket.io",
+    "io",
+    "hash",
+    "ip",
+    "sticky",
+    "session",
+    "balanced",
+    "load"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wzrdtales/socket-io-sticky-session/issues"
+  },
+  "homepage": "https://github.com/wzrdtales/socket-io-sticky-session"
 }
