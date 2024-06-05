@@ -6,7 +6,7 @@
   "main": "./lib/sticky-session",
   "dependencies": {
     "debug": "^2.2.0",
-    "ip": "^1.0.0"
+    "ip": "^2.0.1"
   },
   "engines": {
     "node": ">= 0.12.0"
